@@ -10,8 +10,23 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        
+        /// Declearation of NSSet
+        
+        NSSet *planets=[NSSet setWithObjects:@"Sun",@"Mercury",@"Vinus",@"Earth",@"Mars", nil];
+        
+        NSLog(@"The NSSet is:%@",planets);
+        
+        ///Enumerating nsset
+        
+        NSLog(@"The set has %li elements", [planets count]);
+        for (id item in planets) {
+            NSLog(@"%@", item);
+        }
+
+        
+        
     }
     return 0;
 }
